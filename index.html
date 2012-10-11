@@ -52,8 +52,8 @@ Testing on Leaflet Interactive map</p>
 var popup = L.popup();
 
 // add marker
-var marker = L.marker([35.1, 129.06]).addTo(map);
-
+var marker_office = L.marker([35.1, 129.06]).addTo(map);
+marker_office.bindPopup("<b>My Location</b><br>At work place").openPopup();
 //add pop up
 function onMapClick(e) {
     popup
