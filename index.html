@@ -51,6 +51,10 @@ Testing on Leaflet Interactive map</p>
  }).addTo(map);
 var popup = L.popup();
 
+// add marker
+var marker = L.marker([35.1, 129.06]).addTo(map);
+
+//add pop up
 function onMapClick(e) {
     popup
         .setLatLng(e.latlng)
